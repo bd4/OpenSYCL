@@ -686,6 +686,11 @@ HIPSYCL_BUILTIN int __hipsycl_isfinite(T x) noexcept {
   return std::isfinite(x);
 }
 
+template<class T>
+HIPSYCL_BUILTIN int __hipsycl_signbit(T x) noexcept {
+  return std::signbit(x);
+}
+
 }
 }
 }
